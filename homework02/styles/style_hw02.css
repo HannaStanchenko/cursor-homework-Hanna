@@ -1,0 +1,15 @@
+p,ol {
+    font-size: 18px;
+}
+
+img {
+    width: 280px;
+}
+
+#img_book, h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(251, 250, 249);
+}
