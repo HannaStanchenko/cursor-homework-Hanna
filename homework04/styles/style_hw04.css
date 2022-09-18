@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+  }
+  
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+
+.commonrules {
+    display: flex;
+    padding: 95px 165px;
+    width: 100%;
+
+}
+
+/*section 1*/
+
+#header {
+    height: 500px;
+    background-color: #ED4C5C;
+}
+
+.left01 {
+    color: #FFFFFF;
+    width: 445px;
+}
+
+.left01 h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.left01 p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    height: 64px;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.image {
+    width: 531px;
+    height: 311px;
+    margin-left:auto;
+}
+
+/*section 2*/
+
+#main {
+    height: 500px;
+    margin-top: -20px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.left02 h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.left02 p {
+    width: 434px;
+    height: 64px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+}
+
+.form {
+    margin-left: 125px;
+}
+
+.form input {
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    text-indent: 31px;    
+}
+
+.form select {
+    height: 60px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    text-indent: 31px; 
+    width: 540px;
+    margin-top: 24px;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+input::placeholder {
+    color: rgba(19, 39, 67, 0.5);
+}
+
+.row input {
+    width: 255px;
+}
+
+#lastinrow {
+    margin-left: 30px;
+}
+
+.underrow input {
+    width: 540px;
+    margin-top: 24px;
+}
+
+.form button {
+    margin-top: 27px;
+    width: 160px;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+}
+
+/*section 3*/
+
+#footer {
+    height: 435px;
+    background-color: #FAFAFA;
+    color: #101010;
+}
+
+.block {
+    width: 255px;
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+.block h3 {
+    font-size: 18px;
+    margin-bottom: 33px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.block p {
+    font-weight: 400;
+    line-height: 160%;
+}
+
+#adress {
+    line-height: 150%;
+}
+
+#copyright {
+    margin-top: 141px;
+}
+
+#icons {
+    margin-top: 15px;
+}
