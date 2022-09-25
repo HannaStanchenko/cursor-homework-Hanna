@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(37, 35, 35);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 40px 15px;
+}
+
+table {
+    width: 940px;
+    border: 1px solid rgba(241, 241, 241, 0.177);
+    border-collapse: collapse;
+    border-radius: 4px;
+    position: relative;
+}
+
+th, td {
+    border-bottom: 1px solid  rgba(241, 241, 241, 0.177);
+    color: white;
+    height: 41px;
+    width: 50%;
+    text-align: left;
+    padding-left: 9px;
+}
+
+.fi-sr-caret-down {
+    font-size: 15px;
+    padding-left: 8px;
+    position: absolute;
+}
+
+.fi-rr-menu-dots {
+    position: absolute;
+    right: 10px;
+}
+
+.date {
+    opacity: 0.5;
+}
+
+
+#table02, #table03 {
+    margin-top: 45px;
+}
+
+
+#squareminus {
+    color: rgb(91, 91, 255);
+    font-size: 15px;
+}
+
+.fortable02, .fortable03 {
+   padding-left: 40px;
+}
+
+.fortable02 img {
+    position: absolute;
+    width: 15px;
+    left: 10px;
+}
+
+#check {
+    width: 19px;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+
+.fi-ss-folders {
+    position: absolute;
+    color: rgb(86, 108, 255);
+    font-size: 18px;
+    left: 12px;
+}
+
+#table03 input {
+    position: absolute;
+    height: 38px;
+    right: 5px;
+    border-radius: 5px;
+    margin-top: -12px;
+    opacity: 0.7;
+    border: 0;
+    background-color: rgb(65, 64, 64);
+}
+
+::placeholder {
+    padding-left: 27px;
+    color: rgb(216, 216, 216);
+    opacity: 0.7;
+}
+
+.fi-bs-search {
+   position: absolute;
+   right: 150px;
+   opacity: 0.7;
+   color: rgb(216, 216, 216);
+}
+
