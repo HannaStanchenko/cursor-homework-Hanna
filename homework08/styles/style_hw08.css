@@ -57,6 +57,7 @@
     border-left: none;
     border-right: none;
     transition: all 0.5s;
+    z-index: -1;
 }
 
 .button::after{
@@ -70,19 +71,18 @@
     border-left: none;
     border-right: none;
     transition: all 0.5s;
+    z-index: -1;
 }
 
 
 
 .button:hover::before {
     right: 98%;
-    z-index: -1;
     border-color: #32ebb3;
 }
 
 .button:hover::after {
     left: 98%;
-    z-index: -1;
     border-color: #3ac098;
 }
 
