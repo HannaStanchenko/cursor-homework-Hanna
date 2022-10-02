@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.grid {
+    width: 215px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(6, 50px);
+    grid-gap: 5px;
+}
+
+.grid div {
+    background-color: grey;
+}
+
+.grid div:nth-last-child(-n+4) {
+    background-color: blue;
+}
+
+.grid div:nth-child(4n-1) {
+    background-color: red;
+}
+
+
+.button {
+    display: block;
+    width: 501px;
+    height: 92px;
+    margin: 200px auto;
+    background-color: #44D3A8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.9s;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 8px;
+    right: 110%;
+    top: 50%;
+    border: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    transition: all 0.5s;
+}
+
+.button::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 8px;
+    left: 110%;
+    top: 50%;
+    border: 2px solid #C4C4C4;
+    border-left: none;
+    border-right: none;
+    transition: all 0.5s;
+}
+
+
+
+.button:hover::before {
+    right: 98%;
+    z-index: -1;
+    border-color: #32ebb3;
+}
+
+.button:hover::after {
+    left: 98%;
+    z-index: -1;
+    border-color: #3ac098;
+}
+
+.button:hover {
+    background-color: white;
+    box-shadow: 1px 1px 10px 10px #44d3a8b9;
+    color: #3ac098;
+    font-size: 25px;
+}
