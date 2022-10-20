@@ -1,0 +1,230 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+#lightsabers {
+    background-image: url(https://wallpaperaccess.com/full/1268183.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 15px;
+}
+
+.sword {
+    position: absolute;
+    width: 20px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background: linear-gradient(0deg, grey 8%, black 8%, black 24%, grey 24%);
+    
+}
+
+
+.sword_red {
+    top: 40%;
+    left: 30%;
+    animation: for_red_sword 3.5s cubic-bezier(.45,.38,1,.39) ;
+    transition: all 0.3s;
+}
+
+.sword_blue {
+    top: 40%;
+    left: 70%;
+    animation: for_blue_sword 3.5s  cubic-bezier(.45,.38,1,.39) ;
+    transition: all 0.3s;
+}
+
+@keyframes for_red_sword {
+    0% {
+        left: 30%;
+    }
+
+    20% {
+        left: 50%;
+        transform: rotate(45deg);
+        box-shadow: 1px 1px 20px 7px red;
+    }
+
+    40% {
+        left: 70%;
+        transform: rotate(180deg);
+        box-shadow: 1px 1px 20px 7px red;
+    }
+
+    60% {
+        left: 70%;
+        transform: rotate(180deg);
+        box-shadow: 1px 1px 20px 7px red;
+    }
+
+    80% {
+        left: 50%;
+        transform: rotate(45deg);
+        box-shadow: 1px 1px 20px 7px red;
+    }
+
+    100% {
+        left: 30%;
+    }
+}
+
+@keyframes for_blue_sword {
+    0% {
+        left: 70%;
+    }
+
+    20% {
+        left: 50%;
+        transform: rotate(-45deg);
+        box-shadow: 1px 1px 20px 7px blue;
+        background-color: blue;
+    }
+
+    40% {
+        left: 30%;
+        transform: rotate(-180deg);
+        box-shadow: 1px 1px 20px 7px blue;
+        background-color: blue;
+    }
+
+    60% {
+        left: 30%;
+        transform: rotate(-180deg);
+        box-shadow: 1px 1px 20px 7px blue;
+        background-color: blue;
+    }
+
+    80% {
+        left: 50%;
+        transform: rotate(-45deg);
+        box-shadow: 1px 1px 20px 7px blue;
+        background-color: blue;
+    }
+
+    100% {
+        left: 70%;
+    }
+}
+
+.sword_green {
+    animation: for_green_sword 3.5s;
+    transition: all 0.3s;
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    box-shadow: 1px 1px 20px 7px green;
+    background-color: green;
+}
+
+@keyframes for_green_sword {
+    0% {
+        top: 10%;
+        left: 10%;
+    }
+
+    25% {
+        top: 65%;
+        left: 10%;
+        transform: rotate(450deg);
+    }
+
+    50% {
+        top: 65%;
+        left: 90%;
+        transform: rotate(-90deg);
+    }
+
+    75% {
+        top: 10%;
+        left: 90%;
+        transform: rotate(-450deg);
+    }
+
+    100% {
+        top: 8%;
+        left: 7%;
+        transform: rotate(-360deg);
+    }
+
+}
+
+#balls {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #8ddede;
+    
+}
+
+.ball:first-child {
+    animation: first_ball 1s infinite alternate cubic-bezier(.45,.22,.47,.97) ;
+}
+
+.ball:nth-child(2) {
+    background: linear-gradient(142deg, rgba(141,222,222,1) 28%, rgba(174,232,232,1) 68%);
+}
+
+.ball:nth-child(3) {
+    background: linear-gradient(90deg, rgba(174,232,232,1) 44%, rgba(174,219,232,1) 84%);
+}
+
+.ball:nth-child(4) {
+    background: rgba(174,219,232,1);
+}
+
+.ball:nth-child(5) {
+    background: linear-gradient(90deg, rgba(174,219,232,1) 63%, rgba(171,201,224,1) 91%);
+}
+
+.ball:nth-child(6) {
+    background: linear-gradient(90deg, rgba(171,201,224,1) 29%, rgba(157,182,218,1) 77%);
+}
+
+.ball:last-child {
+    background-color: rgba(157,182,218,1);
+    animation: last_ball 1s infinite alternate 1s cubic-bezier(.45,.22,.47,.97) ;
+}
+
+@keyframes first_ball {
+    0%, 50% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 90deg;
+        transform-origin: 25px -80px; 
+    }
+    
+}
+
+@keyframes last_ball {
+    0%, 50% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: -90deg;
+        transform-origin: 25px -80px; 
+    }
+    
+}
