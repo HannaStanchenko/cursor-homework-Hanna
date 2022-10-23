@@ -1,0 +1,55 @@
+@media screen and (max-width: 922px) {
+    header, header .row {
+        height: 120px;
+        flex-direction: column;
+        margin-top: 8px;
+    }
+
+    .search_icon {
+        display: none;
+    }
+
+    .one {
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    } 
+
+    .main_photo {
+        width: 155px;
+    }
+
+    #numbers {
+        text-align: center;
+    } 
+    #text {
+        text-align: center;
+    }
+    #text p:first-child {
+        margin-bottom: 10px;
+    }
+
+    #text p:nth-child(2) {
+        max-width: fit-content;
+        margin-bottom: 10px;
+    }
+
+    #small_circles {
+        justify-content: center;
+    }
+
+    .border {
+        border: none !important;
+    }
+
+    #name_sc {
+        padding: 0 !important;
+        justify-content: center;
+        column-gap: 79px;
+    }
+    
+    .follow {
+        margin: 0 10px !important;
+    }
+    
+}

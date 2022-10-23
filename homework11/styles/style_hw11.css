@@ -1,0 +1,210 @@
+
+
+/* HEADER */
+
+header {
+    height: 50px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+header .row {
+    height: 50px;
+}
+
+.search {
+    width: 216px;
+    height: 29px;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #8F8F8F;
+}
+
+.search_icon {
+    font-size: 0.6em;
+    top: 11.5px;
+    left: 173px;
+    color: #8F8F8F;
+}
+
+input {
+    cursor: pointer;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.menu_icons svg, .circle {
+    cursor: pointer;
+}
+
+.menu_icons svg:hover .change_color {
+    fill:#DC565B;
+}
+
+i {
+    cursor: pointer;
+}
+
+.menu_icons .circle:hover {
+    background-color: #DC565B;
+}
+
+.circle {
+    width: 22px;
+    height: 22px;
+    background-color: #4094EF;
+}
+
+.circle_red {
+    width: 18px;
+    height: 18px;
+    background-color: #DC565B;
+    color: #FFFFFF;
+    font-size: 12px;
+    bottom: 12px;
+    left: 10px;
+    
+}
+
+/* MAIN */
+
+.information p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    color: #262626;
+}
+
+.information button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    width: 97px;
+    height: 29px;
+    background: #4094EF;
+    border-radius: 3px;
+}
+
+.button {
+    width: 33px;
+    height: 29px;
+    background: #4094EF;
+    border-radius: 3px;
+    color: white;
+}
+
+#numbers {
+    gap: 15px;
+}
+
+#numbers p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #262626;
+}
+
+#text p {
+    color: #262626;
+    font-size: 17px;
+    margin: 0;
+    line-height: 25px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#text p:first-child {
+    font-weight: 500;
+}
+
+#text p:nth-child(2) {
+    width: 531px;
+}
+
+#text p:last-child {
+    color: #133768;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#text p:last-child:hover {
+    color: #0052c4;
+}
+
+#small_circles  {
+    max-width: 870px;
+    margin: 50px auto 10px auto;
+    column-gap: 34px;
+} 
+
+.border {
+    cursor: pointer;
+}
+
+#small_circles .border:hover{
+    background-color: #4094EF;
+}
+
+#name_sc {
+    max-width: 870px;
+    margin: 5px auto;
+    column-gap: 83px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #262626;
+}
+
+
+
+.one {
+    max-width: 965px;
+    margin: 55px auto;
+}
+
+.border {
+    width: 87px;
+    height: 87px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.grid {
+    max-width: 965px;
+    margin: 55px auto;
+    border-top: 1px solid #DBDBDB;
+    flex-direction: column;
+}
+
+.posts_tagged p {
+    margin: 0;
+}
+
+.posts_tagged {
+    cursor: pointer;
+}
+
+.posts_tagged:hover p, .posts_tagged:hover .pt {
+    color: black;
+    fill:#DC565B;
+    font-weight: 500;
+}
+
+.place_for_posts {
+    flex-wrap: wrap;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.place_for_posts img:hover  {
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.458);
+}
