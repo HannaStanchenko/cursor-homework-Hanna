@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+$main-color-blue: #18A0FB;
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+body {
+    padding: 44px 58px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2C2C2C;
+    margin-bottom: 30px;
+}
+
+.b-big, .b-small {
+    column-gap: 130px;
+    margin-bottom: 73px;
+    font-size: 15px;
+
+
+    &__dwnld {
+        row-gap: 24px;
+    }
+
+    &__dwnld01, &__dwnld02, &__dwnld03   {
+        column-gap: 20px;
+
+        button {
+            width: 144px;
+            height: 46px;
+            border-radius: 5px;
+            border: none;
+            transition: all 0.2s;
+
+            &:first-child {
+                background: $main-color-blue;
+                color: #FFFFFF;
+
+                &:hover {
+                    background-color: #FFFFFF;
+                    border: 2px solid $main-color-blue;
+                    color: $main-color-blue;
+                }
+
+                &:active {
+                    background-color: #6bc2fc2c;
+                }
+            }
+
+            &:nth-child(2) {
+                background: rgba(224, 224, 224, 0.3);
+                color: #878787;
+
+                &:hover {
+                    border: 1px solid #696969;
+                    color: #2C2C2C;
+                }
+
+                &:active {
+                    background-color: rgb(225, 225, 225);
+                }
+            }
+
+            &:nth-child(3) {
+                background: #FFFFFF;
+                border: 1px solid #E0E0E0;
+                color: #2C2C2C;
+
+                &:hover {
+                    border: 1px solid rgb(0, 0, 0);
+                    color: #000000;
+                }
+
+                &:active {
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                }
+            }
+
+            &:last-child {
+                background: #FFFFFF;
+                border: 1px solid $main-color-blue;
+                color: $main-color-blue;
+
+                &:hover {
+                    background-color: $main-color-blue;
+                    color: #FFFFFF;
+                }
+
+                &:active {
+                    background-color:#018dea;
+                }
+            }
+        }
+    }
+
+    &__dwnld02, &__dwnld03 {
+        column-gap: 19px;
+        
+        svg {
+            margin-left: 10px;
+        }
+
+        button {
+            width: 146px;
+            height: 48px;
+
+            &:first-child {
+                .svg-color {
+                    fill: #FFFFFF;
+                }
+
+                &:hover .svg-color {
+                    fill: $main-color-blue;
+                }
+            }
+
+            &:nth-child(2) {
+                .svg-color {
+                    fill: #878787;
+                }
+
+                &:hover .svg-color {
+                    fill: #2C2C2C;
+                }
+            }
+
+            &:nth-child(3) {
+                &:active .svg-color {
+                    fill: white;
+                }
+            }
+
+            &:last-child {
+                .svg-color {
+                    fill: $main-color-blue;
+                }
+
+                &:hover .svg-color {
+                    fill: white;
+                }
+            }
+        }
+    }
+
+    &__dwnld03 {
+        svg {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+
+
+    &__right-btns {
+        row-gap: 24px;
+    }
+
+
+    &__right-btns01, &__right-btns02, &__right-btns03 {
+        button {
+            width: 56px;
+            height: 48px;
+            background: #FFFFFF;
+            border: 1px solid #E0E0E0;
+            transition: all 0.2s;
+
+            &:first-child {
+                background: #18A0FB;
+                border-radius: 5px 0px 0px 5px;
+                border: none;
+                color: #FFFFFF;
+            }
+
+            &:nth-child(2) {
+                border-radius: 0px;
+                &:hover {
+                    background-color: $main-color-blue;
+                    color: white;
+                    border-color: $main-color-blue;
+                }
+
+                &:hover .svg-color {
+                    fill: white;
+                }
+
+            }
+
+            &:last-child {
+                border-left: none;
+                border-radius: 0px 5px 5px 0px;
+
+                &:hover {
+                    background-color: $main-color-blue;
+                    color: white;
+                    border-color: $main-color-blue;
+                }
+
+                &:hover .svg-color {
+                    fill: white;
+                }
+            }
+        }
+    }
+
+    &__right-btns02 {
+        button {
+            width: 134px;
+            height: 46px;
+        }
+    }
+
+    &__right-btns03 {
+        button {
+            width: 106px;
+            height: 46px;
+        }
+    }
+}
+
+.b-small {
+    font-size: 13px;
+
+    svg {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    &__dwnld01 {
+        button {
+            width: 111px;
+            height: 36px;
+        }
+        column-gap: 54px;
+    }
+
+    &__dwnld02, &__dwnld03 {
+        column-gap: 49px;
+
+        button {
+            width: 116px;
+            height: 36px;
+        }
+
+        svg {
+            margin-left: 5px;
+        }
+    }
+
+    &__dwnld03 {
+
+        button {
+            &:first-child {
+                background-color: #FF3E1D;
+
+                &:hover {
+                    border: 2px solid #FF3E1D;
+                    background-color: white;
+                    color: #FF3E1D;
+                }
+                
+                &:hover .svg-color {
+                    fill: #FF3E1D;
+                }
+            }
+        }
+        svg {
+            margin-left: 0;
+            margin-right: 5px;
+        }
+    }
+
+    &__tag01, &__tag02 {
+        column-gap: 12px;
+        div {
+            margin-top: 38px;
+            width: 65px;
+            height: 28px;
+            border-radius: 5px;
+            font-size: 13px;
+            align-items: center;
+            padding-left: 10px;
+
+            &:first-child {
+                background: #FFFFFF;
+                border: 1px solid #E0E0E0;
+                color: #2C2C2C;
+            }
+
+            &:last-child {
+                background: $main-color-blue;
+                color: #FFFFFF;
+            }
+
+            i {
+                font-size: 10px;
+                margin-top: 2.5px;
+                margin-left: 10px;
+                cursor: pointer;
+                
+            }
+        }
+    }
+
+    &__tag02 {
+        column-gap: 25px;
+        div {
+            padding-left: 0;
+            margin: 0;
+            justify-content: center;
+            width: 51px;
+            height: 28px;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:first-child {
+                &:hover {
+                    background: $main-color-blue;
+                    color: #FFFFFF;
+                    border: none;
+                }
+
+                &:active {
+                    background-color: #188cd9;
+                }
+            }
+
+
+            &:last-child {
+                &:hover {
+                    background: #FFFFFF;
+                    border: 1px solid #E0E0E0;
+                    color: #2C2C2C;
+                }
+
+                &:active {
+                    background: #cfcfcf;
+                }
+            }
+
+        }
+    }
+
+    &__right-btns01, &__right-btns02, &__right-btns03 {
+        font-size: 15px;       
+        button {
+            height: 36px;
+        } 
+    }
+
+    &__right-btns01 {
+        button {
+            width: 48px;
+        }
+    }
+
+    &__right-btns02 {
+        button {
+            width: 86px;
+        }
+    }
+
+    &__right-btns03 {
+        button {
+            width: 58px;
+        }
+    }
+
+    &__circle-btns {
+        column-gap: 20px;
+        div {
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            cursor: pointer;
+
+            &:first-child {
+                width: 36px;
+                height: 36px;
+                background-color: #FF3E1D;
+
+                &:hover {
+                    background-color: #00D200;
+                }
+
+            }
+
+            &:last-child {
+                width: 48px;
+                height: 48px;
+                background-color: #00D200;
+
+                &:hover {
+                    background-color: #FF3E1D;
+                }
+            }
+        }
+        
+    }
+
+}
+
+
+
