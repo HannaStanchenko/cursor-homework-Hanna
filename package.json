@@ -1,0 +1,23 @@
+{
+  "name": "cursor-homework-hanna",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HannaStanchenko/cursor-homework-Hanna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HannaStanchenko/cursor-homework-Hanna/issues"
+  },
+  "homepage": "https://github.com/HannaStanchenko/cursor-homework-Hanna#readme",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}
